@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "react-native-app",
-    "slug": "react-native-app",
+    "name": "restate",
+    "slug": "restate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "restate",
+    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -30,7 +30,7 @@
           "image": "./assets/images/splash-icon.png",
           "resizeMode": "cover",
           "backgroundColor": "#ffffff",
-          "enableFullScreenImage_Legacy": true
+          "enableFullScreenImage_legacy": true
         }
       ],
       [
@@ -39,15 +39,14 @@
           "fonts": [
             "./assets/fonts/Rubik-Bold.ttf",
             "./assets/fonts/Rubik-ExtraBold.ttf",
-            "./assets/fonts/Rubik-Medium.ttf",
             "./assets/fonts/Rubik-Light.ttf",
+            "./assets/fonts/Rubik-Medium.ttf",
             "./assets/fonts/Rubik-Regular.ttf",
             "./assets/fonts/Rubik-SemiBold.ttf"
           ]
         }
       ]
     ],
-
     "experiments": {
       "typedRoutes": true
     }
