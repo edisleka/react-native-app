@@ -124,9 +124,11 @@ export async function getProperties({
   try {
     const buildQuery = [Query.orderDesc('$createdAt')]
 
-    if (filter && filter !== 'All') buildQuery.push(Query.equal('type', filter))
+    if (filter && filter !== 'All') {
+      buildQuery.push(Query.equal('type', filter))
+    }
 
-    if (query)
+    if (query) {
       buildQuery.push(
         Query.or([
           Query.search('name', query),
@@ -134,8 +136,11 @@ export async function getProperties({
           Query.search('type', query),
         ])
       )
+    }
 
-    if (limit) buildQuery.push(Query.limit(limit))
+    if (limit) {
+      buildQuery.push(Query.limit(limit))
+    }
 
     const result = await databases.listDocuments(
       config.databaseId!,

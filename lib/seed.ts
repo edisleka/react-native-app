@@ -16,14 +16,13 @@ const COLLECTIONS = {
 
 const propertyTypes = [
   'House',
-  'Townhome',
-  'Condos',
-  'Duplexe',
+  'Townhouse',
+  'Condo',
+  'Duplex',
   'Studio',
   'Villa',
   'Apartment',
-  'Land',
-  'Others',
+  'Other',
 ]
 
 const facilities = ['Laundry', 'Parking', 'Gym', 'Wifi', 'Pet-friendly']
